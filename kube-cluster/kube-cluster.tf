@@ -4,6 +4,7 @@ resource "google_container_cluster" "gcpcluster" {
   network    = "default"
   subnetwork = "default"
   zone       = "us-central1-a"
+  mashine_type = "n1-standard-2"
 
   # additional_zones = "${var.additional_zones}"
 
