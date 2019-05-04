@@ -24,5 +24,5 @@ resource "google_project_iam_member" "sstanytska" {
 
 resource "local_file" "privateKey" {
     content     = "${base64decode(google_service_account_key.mykey.private_key)}"
-    filename    = "tmp/private_key.json"
+    filename    = "/tmp/private_key.json"
 }

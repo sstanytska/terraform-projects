@@ -1,5 +1,5 @@
 initial_node_count      =    "2"
 cluster_name            = "gosonik"
-cpath                   =    "/home/jozsefolah15/terraform-projects/kube-cluster/astral-root-234422-c9f984a01f17.json"
+cpath                   =    "/tmp/private_key.json"
 project                 =    "astral-root-234422"
 region                  =    "asia-east2"
