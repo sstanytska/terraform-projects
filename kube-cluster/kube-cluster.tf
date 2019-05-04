@@ -3,7 +3,7 @@ provider "google" {
   project       = "${var.project}"
   region        = "${var.region}"
 }
-resource "google_container_cluster" "gcpcluster" {
+resource "google_container_cluster" "gosonik" {
     name                = "${var.cluster_name}"
     network             = "default"
     subnetwork          = "default"
