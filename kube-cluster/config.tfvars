@@ -1,4 +1,4 @@
-initial_node_count      =    "2"
+initial_node_count      =    "1"
 cluster_name            = "gosonik"
 cpath                   =    "/tmp/private_key.json"
 project                 =    "astral-root-234422"
