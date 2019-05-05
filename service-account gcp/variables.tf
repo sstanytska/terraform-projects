@@ -4,7 +4,7 @@ variable "account_id" {
 }
 variable "display_name" {
     description = "The display name for the service account. Can be updated without creating a new resource."
-    default     = "sonickmurod"
+    default     = "My First Project"
 }
 variable "roles" {
     type        = "list"
