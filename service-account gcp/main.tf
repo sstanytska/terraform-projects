@@ -1,6 +1,6 @@
 provider "google" {
  credentials   = "${file("${var.cpath}")}"   #GOOGLE_CREDENTIALS to the path of a file containing the credential JSON
- account_id       = "${var.account_id}"
+ project       = "${var.project}"
 }
 resource "google_service_account" "zver" {
     account_id   = "${var.account_id}"
