@@ -11,6 +11,7 @@ variable "roles" {
     description = "Provides access to full management of Container Clusters and their Kubernetes API objects."
     default     = ["roles/container.admin",]
 }
+
 variable "cpath" {
     default     = "/home/jozsefolah15/terraform-projects/service-account gcp/civil-celerity-239622-795c57728d3f.json"
     
