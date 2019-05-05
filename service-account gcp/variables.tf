@@ -8,7 +8,7 @@ variable "display_name" {
 }
 variable "roles" {
     type        = "list"
-    description = "The roles that will be granted to the account."
-    default     = ["roles/editor",]
+    description = "Provides access to full management of Container Clusters and their Kubernetes API objects."
+    default     = ["roles/container.admin",]
 }
 variable "project" {}
