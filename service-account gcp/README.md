@@ -50,3 +50,6 @@ resource "kubernetes_secret" "cloudsql-instance-credentials" {
 | `private_key`         | The private key that was create for the account.         |
 | `decoded_private_key` | The base64 decoded private key.                          |
 
+For change or add more roles,   
+you can use this link:  
+https://cloud.google.com/iam/docs/understanding-roles?&_ga=2.74084561.-2117374167.1545018634#kubernetes-engine-roles
