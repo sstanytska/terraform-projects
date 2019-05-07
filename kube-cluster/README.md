@@ -1,5 +1,7 @@
-#Google Cloud Platform Kubernetes Cluster Terraform Module
 
+# Google Cloud Platform Kubernetes Cluster Terraform Module
+
+## Inputs
 
 | Name                  | Description                                         |  Type  | Default | Required |
 |:----------------------|:----------------------------------------------------|:------:|:-------:|:--------:|
