@@ -15,7 +15,17 @@ module "primary-cluster" {
   environment            = "${terraform.workspace}" 
   min_master_version     = "${var.master_version}"
 }
+```  
+and in provider:
+
+```ruby
+provider "google" {
+  credentials = "${file("${var.cpath}")}"
+  project     = "${var.project_id}"
+  region      = "${var.region}"
+}
 ```
+
 ## Inputs
 
 | Name                  | Description                                         |  Type  | Default | Required |
