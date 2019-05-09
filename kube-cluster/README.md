@@ -1,6 +1,21 @@
 
 # Google Cloud Platform Kubernetes Cluster Terraform Module
 
+## Usage
+## cluster with default node pool on preemptible
+
+```ruby
+module "primary-cluster" {
+  name                   = "${terraform.workspace}"
+  source                 = "russmedia/kubernetes-cluster/google"
+  version                = "2.0.0"
+  region                 = "${var.google_region}"
+  zones                  = "${var.google_zones}"
+  project                = "${var.project}"
+  environment            = "${terraform.workspace}" 
+  min_master_version     = "${var.master_version}"
+}
+```
 ## Inputs
 
 | Name                  | Description                                         |  Type  | Default | Required |
