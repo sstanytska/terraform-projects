@@ -57,7 +57,7 @@ Run command:
 
 Test the deploy.
 
-When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Service Account``` for create Kubernetes.
+When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Service Account``` for create Kubernetes cluster.
 
 
 
