@@ -3,7 +3,7 @@ Terraform module for creating a service account in Google Cloud Platform. The mo
 
 # Setup
 
-1st you have to create ```service-account.json``` inside the  ```credentials``` dir in the root directory before running which would contain your service ```Account Key```  file.
+1st you have to create ```account.json``` inside the  ```credentials``` dir in the root directory before running which would contain your service ```Account Key```  file.
 
 This contains your authentication required for Terraform to talk to the Google API.
 
@@ -11,7 +11,7 @@ You can get it under
 ```
 Google Cloud Platform -> API Manager -> Credentials -> Create Credentials -> Service account key.
 ```
-For the Key type field chose JSON. Put the downloaded file right were your Terraform config file is and name it ```service-account.json```.
+For the Key type field chose JSON. Put the downloaded file right were your Terraform config file is and name it ```account.json```.
 
 If you are using the gcs as the backend, you will need to give it the ```Service Account Admin``` role for the ```service-account``` permission.
 
@@ -57,7 +57,7 @@ Run command:
 
 Test the deploy.
 
-When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Service Account``` for create Kubernetes Engine Cluster.
+When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Service Account``` for create Kubernetes.
 
 
 
