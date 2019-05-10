@@ -3,7 +3,7 @@ Terraform module for creating a service account in Google Cloud Platform. The mo
 
 # Setup
 
-1st you have to create ```account.json``` inside the  ```credentials``` dir in the root directory before running which would contain your service ```Account Key```  file.
+1st you have to create ```service-account.json``` inside the  ```credentials``` dir in the root directory before running which would contain your service ```Account Key```  file.
 
 This contains your authentication required for Terraform to talk to the Google API.
 
@@ -11,11 +11,11 @@ You can get it under
 ```
 Google Cloud Platform -> API Manager -> Credentials -> Create Credentials -> Service account key.
 ```
-For the Key type field chose JSON. Put the downloaded file right were your Terraform config file is and name it ```account.json```.
+For the Key type field chose JSON. Put the downloaded file right were your Terraform config file is and name it ```service-account.json```.
 
 If you are using the gcs as the backend, you will need to give it the ```Service Account Admin``` role for the ```service-account``` permission.
 
-# In order to do so we are going to create four files:
+# In order to do so we are going to create 3 files:
 
 ```main.tf``` -- contains the definition of what we want to achieve
 
@@ -31,7 +31,7 @@ If you are using the gcs as the backend, you will need to give it the ```Service
 deployment script.
 
 
-From now on every time you run a ```terraform``` commands ##{plan|apply|destroy|...}## you will need to provide the required variables. Without further information ```terraform``` will enter an interactive mode requesting each variables one by one at the prompt.
+From now on every time you run a ```terraform``` commands ```{plan|apply|destroy|...}``` you will need to provide the required variables. Without further information ```terraform``` will enter an interactive mode requesting each variables one by one at the prompt.
 
 
 # Initialize working directory.
@@ -47,17 +47,17 @@ You must modify the Google Cloud , region,namespace and environment  which is de
 
 Run command:
 
-```terraform plan -var-file=config.tfvars```   Displays what would be executed
+```terraform plan ```   Displays what would be executed
 
 # Deploy the changes.
 
 Run command:
 
-```terraform apply  -var-file=config.tfvars```    Applies the changes
+```terraform apply```    Applies the changes
 
 Test the deploy.
 
-When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Storage bucket``` created in the ```Google Cloud Project```.
+When the ```terraform apply``` command completes, use the ```Google Cloud console```, you should see the new ```Google Service Account``` for create Kubernetes Engine Cluster.
 
 
 
